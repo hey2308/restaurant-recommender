@@ -98,25 +98,17 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Hero Image Card */}
+            {/* Hero Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-card">
-              <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">🍜</div>
-                    <p className="text-secondary-light">Delicious food awaits</p>
-                  </div>
-                </div>
-                <div className="absolute bottom-4 left-4">
-                  <span className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                    Personalized Pick
-                  </span>
-                </div>
-                <div className="absolute bottom-4 right-4">
-                  <p className="text-white text-sm font-medium drop-shadow-lg">
-                    Discovery awaits you.
-                  </p>
-                </div>
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&h=600&fit=crop"
+                alt="Delicious food"
+                className="w-full aspect-[4/3] object-cover"
+              />
+              <div className="absolute bottom-4 left-4">
+                <span className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                  Personalized Pick
+                </span>
               </div>
             </div>
           </div>

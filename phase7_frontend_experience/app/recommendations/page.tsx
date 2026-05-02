@@ -145,19 +145,16 @@ export default function RecommendationsPage() {
               className="bg-white rounded-2xl overflow-hidden shadow-card card-hover animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Image Section */}
-              <div className="relative aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200">
-                <div className="absolute top-3 left-3">
+              {/* Header Section with Rank and Rating */}
+              <div className="relative bg-gradient-to-br from-gray-100 to-gray-200 p-4">
+                <div className="flex items-center justify-between">
                   <span className="bg-secondary/80 text-white text-xs font-bold px-2 py-1 rounded">
                     Rank {getRankBadge(index)}
                   </span>
-                </div>
-                <div className={`absolute top-3 right-3 ${getRatingColor(restaurant.rating)} text-white px-2 py-1 rounded flex items-center gap-1`}>
-                  <span className="text-sm font-bold">{restaurant.rating}</span>
-                  <Star className="w-3 h-3 fill-white" />
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl">🍽️</span>
+                  <div className={`${getRatingColor(restaurant.rating)} text-white px-2 py-1 rounded flex items-center gap-1`}>
+                    <span className="text-sm font-bold">{restaurant.rating}</span>
+                    <Star className="w-3 h-3 fill-white" />
+                  </div>
                 </div>
               </div>
 
