@@ -123,6 +123,51 @@ This document describes the phase-wise architecture for the Zomato-inspired AI r
 **Input:** User interaction and feedback signals  
 **Output:** Better retrieval strategy and recommendation relevance
 
+---
+
+## Phase 9: Backend Deployment Layer (Render)
+
+**Goal:** Deploy the Flask backend API to Render for production hosting.
+
+**Core Components:**
+- `Render Web Service` (Flask app hosted on render.com)
+- `Environment Configuration` (GROQ_API_KEY and other secrets via Render dashboard)
+- `Build Configuration` (pip install from requirements.txt, start command)
+- `Custom Domain` (optional: api.bitewise-ai.com)
+
+**Deployment Steps:**
+1. Create `render.yaml` or use Render Dashboard
+2. Configure build command: `pip install -r requirements.txt`
+3. Configure start command: `gunicorn app:app --bind 0.0.0.0:$PORT`
+4. Add environment variable `GROQ_API_KEY` in Render dashboard
+5. Deploy from GitHub repository (main branch)
+
+**Input:** GitHub repository with Phase 6 backend code  
+**Output:** Live API at `https://<service-name>.onrender.com/api/v1/recommendations`
+
+---
+
+## Phase 10: Frontend Deployment Layer (Vercel)
+
+**Goal:** Deploy the Next.js frontend to Vercel for production hosting.
+
+**Core Components:**
+- `Vercel Project` (Next.js 14 app with static/dynamic export)
+- `Environment Variables` (API_BASE_URL pointing to Render backend)
+- `Build Settings` (Next.js preset, output directory `.next`)
+- `Custom Domain` (optional: www.bitewise-ai.com)
+
+**Deployment Steps:**
+1. Import GitHub repository in Vercel dashboard
+2. Configure framework preset: Next.js
+3. Add environment variable `NEXT_PUBLIC_API_URL` pointing to Render backend
+4. Deploy with Git integration (auto-deploy on push to main)
+
+**Input:** GitHub repository with Phase 7 frontend code + Phase 9 backend URL  
+**Output:** Live frontend at `https://<project-name>.vercel.app`
+
+---
+
 ## End-to-End Request Flow
 
 1. User submits preferences.

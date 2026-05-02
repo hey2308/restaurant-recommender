@@ -17,9 +17,10 @@ class Config:
     VERSION = "1.0.0"
     DESCRIPTION = "AI-powered restaurant recommendation system backend"
     HOST = "0.0.0.0"
-    PORT = 8000
-    DEBUG = True
-    DATA_ROOT = "c:/Projects/Milestone1"
+    PORT = int(os.environ.get("PORT", 8000))
+    DEBUG = os.environ.get("FLASK_DEBUG", "False").lower() == "true"
+    # Use environment variable for data root (Render uses /opt/render/project/src)
+    DATA_ROOT = os.environ.get("DATA_ROOT", "c:/Projects/Milestone1")
 
 # Initialize Flask app
 app = Flask(__name__)
