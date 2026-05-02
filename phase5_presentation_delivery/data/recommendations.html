@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Restaurant Recommendations</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; background: #f8fafc; }
+    .container { max-width: 960px; margin: auto; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+    .card { background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 12px; }
+    .meta { color: #334155; }
+    .explanation { margin-top: 18px; padding: 12px; background: #fff; border-radius: 10px; border: 1px solid #e2e8f0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Top Restaurant Recommendations</h1>
+    <p class="meta">
+      Profile: location=Bangalore | budget=medium
+      | cuisine=Chinese | min_rating=3.8
+    </p>
+    <p><strong>Summary:</strong> Top 5 Chinese restaurants in Bangalore with a medium budget and a minimum rating of 3.8</p>
+    <div class="cards">
+      <div class='card'><h3>Asia Kitchen By Mainland China</h3><p><strong>Rank #1</strong></p><p>Rating: 4.9</p><p>Estimated cost: 1500.0</p><p>Cuisine: Asian, Chinese, Thai, Momos</p><p>Location: Koramangala 5th Block, Bangalore</p><p>Highly rated Chinese restaurant with a great score and excellent reviews</p></div><div class='card'><h3>ECHOES Koramangala</h3><p><strong>Rank #2</strong></p><p>Rating: 4.7</p><p>Estimated cost: 750.0</p><p>Cuisine: Chinese, American, Continental, Italian, North Indian</p><p>Location: Koramangala 5th Block, Bangalore</p><p>Well-rated Chinese restaurant with a good score and affordable price</p></div><div class='card'><h3>Mahjong Room - WelcomHotel Bengaluru</h3><p><strong>Rank #3</strong></p><p>Rating: 4.6</p><p>Estimated cost: 1200.0</p><p>Cuisine: Chinese</p><p>Location: Richmond Road, Bangalore</p><p>High-quality Chinese restaurant with a good rating and suitable price</p></div><div class='card'><h3>Vanilla Sky</h3><p><strong>Rank #4</strong></p><p>Rating: 4.6</p><p>Estimated cost: 1200.0</p><p>Cuisine: Chinese, Continental, North Indian, Finger Food</p><p>Location: HSR, Bangalore</p><p>Well-rated restaurant with Chinese cuisine and a good score</p></div><div class='card'><h3>The Big Barbeque</h3><p><strong>Rank #5</strong></p><p>Rating: 4.7</p><p>Estimated cost: 1500.0</p><p>Cuisine: BBQ, North Indian, Continental, Chinese</p><p>Location: Electronic City, Bangalore</p><p>Good-rated restaurant with Chinese cuisine and a medium budget</p></div>
+    </div>
+    <div class="explanation">
+      <h2>Explanation View</h2>
+      <p>Why these restaurants were recommended<br/>Preferences considered: location=Bangalore, budget=medium, cuisine=Chinese, min_rating=3.8<br/><br/>1. Asia Kitchen By Mainland China<br/>   Reason: Highly rated Chinese restaurant with a great score and excellent reviews<br/>   Details: rating=4.9, cost=1500.0, cuisine=Asian, Chinese, Thai, Momos, location=Koramangala 5th Block, Bangalore<br/><br/>2. ECHOES Koramangala<br/>   Reason: Well-rated Chinese restaurant with a good score and affordable price<br/>   Details: rating=4.7, cost=750.0, cuisine=Chinese, American, Continental, Italian, North Indian, location=Koramangala 5th Block, Bangalore<br/><br/>3. Mahjong Room - WelcomHotel Bengaluru<br/>   Reason: High-quality Chinese restaurant with a good rating and suitable price<br/>   Details: rating=4.6, cost=1200.0, cuisine=Chinese, location=Richmond Road, Bangalore<br/><br/>4. Vanilla Sky<br/>   Reason: Well-rated restaurant with Chinese cuisine and a good score<br/>   Details: rating=4.6, cost=1200.0, cuisine=Chinese, Continental, North Indian, Finger Food, location=HSR, Bangalore<br/><br/>5. The Big Barbeque<br/>   Reason: Good-rated restaurant with Chinese cuisine and a medium budget<br/>   Details: rating=4.7, cost=1500.0, cuisine=BBQ, North Indian, Continental, Chinese, location=Electronic City, Bangalore<br/></p>
+    </div>
+  </div>
+</body>
+</html>

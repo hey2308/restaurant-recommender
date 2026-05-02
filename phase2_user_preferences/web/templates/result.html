@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preferences saved</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #fff;
+      --text: #1a1d26;
+      --muted: #5c6578;
+      --border: #e2e5eb;
+      --accent: #c94c32;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1rem 3rem;
+      line-height: 1.5;
+    }
+    .wrap { max-width: 36rem; margin: 0 auto; }
+    h1 { font-size: 1.5rem; margin: 0 0 0.5rem; }
+    .lede { color: var(--muted); margin: 0 0 1.25rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+    dl { margin: 0; display: grid; grid-template-columns: 8.5rem 1fr; gap: 0.5rem 1rem; }
+    dt { color: var(--muted); font-size: 0.85rem; }
+    dd { margin: 0; font-weight: 500; }
+    pre {
+      margin: 1rem 0 0;
+      padding: 1rem;
+      background: #f0f2f6;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      overflow: auto;
+    }
+    a {
+      display: inline-block;
+      margin-top: 1.25rem;
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Validated preference profile</h1>
+    <p class="lede">This is the structured output Phase 2 hands to filtering and recommendation (later phases).</p>
+    <div class="card">
+      <dl>
+        <dt>Location</dt><dd>{{ profile.location }}</dd>
+        <dt>Budget</dt><dd>{{ profile.budget }}</dd>
+        <dt>Cuisine</dt><dd>{{ profile.cuisine }}</dd>
+        <dt>Min. rating</dt><dd>{{ profile.min_rating }}</dd>
+        <dt>Optional tags</dt>
+        <dd>{% if profile.optional_tags %}{{ profile.optional_tags | join(', ') }}{% else %}—{% endif %}</dd>
+      </dl>
+      <pre>{{ profile.to_dict() | tojson(indent=2) }}</pre>
+      <a href="{{ url_for('index') }}">← Edit preferences</a>
+    </div>
+  </div>
+</body>
+</html>

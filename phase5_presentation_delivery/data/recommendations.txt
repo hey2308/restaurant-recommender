@@ -1,0 +1,34 @@
+Top Restaurant Recommendations
+==============================
+Summary: Top 5 Chinese restaurants in Bangalore with a medium budget and a minimum rating of 3.8
+
+Table View
+------------------------------
+1. Asia Kitchen By Mainland China | rating=4.9 | cost=1500.0 | cuisine=Asian, Chinese, Thai, Momos | location=Koramangala 5th Block, Bangalore
+2. ECHOES Koramangala | rating=4.7 | cost=750.0 | cuisine=Chinese, American, Continental, Italian, North Indian | location=Koramangala 5th Block, Bangalore
+3. Mahjong Room - WelcomHotel Bengaluru | rating=4.6 | cost=1200.0 | cuisine=Chinese | location=Richmond Road, Bangalore
+4. Vanilla Sky | rating=4.6 | cost=1200.0 | cuisine=Chinese, Continental, North Indian, Finger Food | location=HSR, Bangalore
+5. The Big Barbeque | rating=4.7 | cost=1500.0 | cuisine=BBQ, North Indian, Continental, Chinese | location=Electronic City, Bangalore
+
+Why these restaurants were recommended
+Preferences considered: location=Bangalore, budget=medium, cuisine=Chinese, min_rating=3.8
+
+1. Asia Kitchen By Mainland China
+   Reason: Highly rated Chinese restaurant with a great score and excellent reviews
+   Details: rating=4.9, cost=1500.0, cuisine=Asian, Chinese, Thai, Momos, location=Koramangala 5th Block, Bangalore
+
+2. ECHOES Koramangala
+   Reason: Well-rated Chinese restaurant with a good score and affordable price
+   Details: rating=4.7, cost=750.0, cuisine=Chinese, American, Continental, Italian, North Indian, location=Koramangala 5th Block, Bangalore
+
+3. Mahjong Room - WelcomHotel Bengaluru
+   Reason: High-quality Chinese restaurant with a good rating and suitable price
+   Details: rating=4.6, cost=1200.0, cuisine=Chinese, location=Richmond Road, Bangalore
+
+4. Vanilla Sky
+   Reason: Well-rated restaurant with Chinese cuisine and a good score
+   Details: rating=4.6, cost=1200.0, cuisine=Chinese, Continental, North Indian, Finger Food, location=HSR, Bangalore
+
+5. The Big Barbeque
+   Reason: Good-rated restaurant with Chinese cuisine and a medium budget
+   Details: rating=4.7, cost=1500.0, cuisine=BBQ, North Indian, Continental, Chinese, location=Electronic City, Bangalore

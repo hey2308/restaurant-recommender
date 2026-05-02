@@ -1,0 +1,520 @@
+{
+  "profile": {
+    "location": "Koramangala",
+    "budget": "medium",
+    "cuisine": "Chinese",
+    "min_rating": 3.8,
+    "optional_tags": []
+  },
+  "total_candidates": 51717,
+  "filtered_candidates": 1180,
+  "selected_candidates": 25,
+  "candidates": [
+    {
+      "source_row_index": 8275,
+      "name": "Asia Kitchen By Mainland China",
+      "city": "BTM",
+      "locality": "136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore",
+      "location": "136, Ground Floor, 1st Cross, 5th Block, Jyoti Niwas College Road, Koramangala 5th Block, Bangalore, BTM",
+      "cuisine": "Asian, Chinese, Thai, Momos",
+      "estimated_cost": 1500.0,
+      "rating": 4.9,
+      "tags": [
+        "has_online_delivery",
+        "has_table_booking"
+      ],
+      "score": 0.94,
+      "score_breakdown": {
+        "rating": 0.49000000000000005,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 10882,
+      "name": "ECHOES Koramangala",
+      "city": "BTM",
+      "locality": "Shop 44, 4th B Cross Road, Koramangala 5th Block, Bangalore",
+      "location": "Shop 44, 4th B Cross Road, Koramangala 5th Block, Bangalore, BTM",
+      "cuisine": "Chinese, American, Continental, Italian, North Indian",
+      "estimated_cost": 750.0,
+      "rating": 4.7,
+      "tags": [],
+      "score": 0.92,
+      "score_breakdown": {
+        "rating": 0.47000000000000003,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 28922,
+      "name": "Vanilla Sky",
+      "city": "Koramangala 4th Block",
+      "locality": "253, 2nd Floor, 5th Main, 17th Cross, Sector 6, HSR, Bangalore",
+      "location": "253, 2nd Floor, 5th Main, 17th Cross, Sector 6, HSR, Bangalore, Koramangala 4th Block",
+      "cuisine": "Chinese, Continental, North Indian, Finger Food",
+      "estimated_cost": 1200.0,
+      "rating": 4.7,
+      "tags": [
+        "has_table_booking"
+      ],
+      "score": 0.92,
+      "score_breakdown": {
+        "rating": 0.47000000000000003,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 28920,
+      "name": "Baar Union",
+      "city": "Koramangala 4th Block",
+      "locality": "253, 1st Floor, 5th Main, 17th Cross, Sector 6, HSR Layout, HSR, Bangalore",
+      "location": "253, 1st Floor, 5th Main, 17th Cross, Sector 6, HSR Layout, HSR, Bangalore, Koramangala 4th Block",
+      "cuisine": "Continental, Finger Food, Asian, Chinese",
+      "estimated_cost": 850.0,
+      "rating": 4.6,
+      "tags": [
+        "has_table_booking"
+      ],
+      "score": 0.91,
+      "score_breakdown": {
+        "rating": 0.45999999999999996,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 8640,
+      "name": "Koramangala Social",
+      "city": "BTM",
+      "locality": "118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore",
+      "location": "118, Koramangala Industrial Area, Koramangala 7th Block, Bangalore, BTM",
+      "cuisine": "American, North Indian, Chinese, Finger Food",
+      "estimated_cost": 1500.0,
+      "rating": 4.6,
+      "tags": [
+        "has_online_delivery"
+      ],
+      "score": 0.91,
+      "score_breakdown": {
+        "rating": 0.45999999999999996,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 2653,
+      "name": "Pin Me Down",
+      "city": "Basavanagudi",
+      "locality": "29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore",
+      "location": "29, Tavakere Main Road, Behind Forum Mall, Koramangala, Bangalore, Basavanagudi",
+      "cuisine": "Continental, Mexican, Chinese, North Indian",
+      "estimated_cost": 800.0,
+      "rating": 4.5,
+      "tags": [
+        "has_online_delivery",
+        "has_table_booking"
+      ],
+      "score": 0.9,
+      "score_breakdown": {
+        "rating": 0.45,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 27851,
+      "name": "Wild Thyme Restaurant",
+      "city": "Koramangala 4th Block",
+      "locality": "145, 60ft Road, KHB Colony, Koramangala 5th Block, Bangalore",
+      "location": "145, 60ft Road, KHB Colony, Koramangala 5th Block, Bangalore, Koramangala 4th Block",
+      "cuisine": "Chinese, Continental, North Indian, Italian, Seafood",
+      "estimated_cost": 800.0,
+      "rating": 4.5,
+      "tags": [],
+      "score": 0.9,
+      "score_breakdown": {
+        "rating": 0.45,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 9239,
+      "name": "Roots",
+      "city": "BTM",
+      "locality": "43/A, 1st Main, Jakkasandra Road, Near Wipro Park, Koramangala 1st Block, Bangalore",
+      "location": "43/A, 1st Main, Jakkasandra Road, Near Wipro Park, Koramangala 1st Block, Bangalore, BTM",
+      "cuisine": "North Indian, South Indian, Chinese, Continental, Mangalorean",
+      "estimated_cost": 1200.0,
+      "rating": 4.5,
+      "tags": [
+        "has_online_delivery",
+        "has_table_booking"
+      ],
+      "score": 0.9,
+      "score_breakdown": {
+        "rating": 0.45,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 10873,
+      "name": "The Reservoire",
+      "city": "BTM",
+      "locality": "17th Main Road, JNC Road, Koramangala 5th Block, Bangalore",
+      "location": "17th Main Road, JNC Road, Koramangala 5th Block, Bangalore, BTM",
+      "cuisine": "Continental, North Indian, Chinese, American, Pizza, Finger Food",
+      "estimated_cost": 1300.0,
+      "rating": 4.5,
+      "tags": [
+        "has_table_booking"
+      ],
+      "score": 0.9,
+      "score_breakdown": {
+        "rating": 0.45,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 9830,
+      "name": "Big Wong XL",
+      "city": "BTM",
+      "locality": "3, 5th Block, 60 Feet Road, Koramangala 5th Block, Bangalore",
+      "location": "3, 5th Block, 60 Feet Road, Koramangala 5th Block, Bangalore, BTM",
+      "cuisine": "Chinese, Sushi, Asian, Thai",
+      "estimated_cost": 1400.0,
+      "rating": 4.5,
+      "tags": [
+        "has_table_booking"
+      ],
+      "score": 0.9,
+      "score_breakdown": {
+        "rating": 0.45,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 8270,
+      "name": "Buff Buffet Buff",
+      "city": "BTM",
+      "locality": "60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore",
+      "location": "60, Jyothi Nivas College Road, Koramangala 5th Block, Bangalore, BTM",
+      "cuisine": "North Indian, Chinese, Continental, Thai, Salad",
+      "estimated_cost": 1500.0,
+      "rating": 4.5,
+      "tags": [
+        "has_online_delivery",
+        "has_table_booking"
+      ],
+      "score": 0.9,
+      "score_breakdown": {
+        "rating": 0.45,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 9218,
+      "name": "Nasi And Mee",
+      "city": "BTM",
+      "locality": "974, 80 Feet Road, Koramangala 4th Block, Bangalore",
+      "location": "974, 80 Feet Road, Koramangala 4th Block, Bangalore, BTM",
+      "cuisine": "Malaysian, Thai, Singaporean, Asian, Chinese, Momos",
+      "estimated_cost": 1000.0,
+      "rating": 4.4,
+      "tags": [
+        "has_online_delivery",
+        "has_table_booking"
+      ],
+      "score": 0.89,
+      "score_breakdown": {
+        "rating": 0.44000000000000006,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 9441,
+      "name": "Drunkling - Sizzlers and Pub",
+      "city": "BTM",
+      "locality": "145, 60ft Road, KHB Colony, Koramangala 5th Block, Bangalore",
+      "location": "145, 60ft Road, KHB Colony, Koramangala 5th Block, Bangalore, BTM",
+      "cuisine": "Chinese, Continental, North Indian, Burger, Pizza, Seafood",
+      "estimated_cost": 1000.0,
+      "rating": 4.4,
+      "tags": [
+        "has_online_delivery",
+        "has_table_booking"
+      ],
+      "score": 0.89,
+      "score_breakdown": {
+        "rating": 0.44000000000000006,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 9318,
+      "name": "China Pearl",
+      "city": "BTM",
+      "locality": "53/1, 5th Cross, Koramangala 6th Block, Bangalore",
+      "location": "53/1, 5th Cross, Koramangala 6th Block, Bangalore, BTM",
+      "cuisine": "Chinese",
+      "estimated_cost": 1100.0,
+      "rating": 4.4,
+      "tags": [
+        "has_online_delivery",
+        "has_table_booking"
+      ],
+      "score": 0.89,
+      "score_breakdown": {
+        "rating": 0.44000000000000006,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 28315,
+      "name": "Sotally Tober",
+      "city": "Koramangala 4th Block",
+      "locality": "769, 80 Feet Road, Koramangala 4th Block, Bangalore",
+      "location": "769, 80 Feet Road, Koramangala 4th Block, Bangalore, Koramangala 4th Block",
+      "cuisine": "Asian, Burger, Pizza, Chinese, Finger Food",
+      "estimated_cost": 1200.0,
+      "rating": 4.4,
+      "tags": [
+        "has_table_booking"
+      ],
+      "score": 0.89,
+      "score_breakdown": {
+        "rating": 0.44000000000000006,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 9363,
+      "name": "Tim Tai",
+      "city": "BTM",
+      "locality": "130, 1st Cross, Koramangala 5th Block, Bangalore",
+      "location": "130, 1st Cross, Koramangala 5th Block, Bangalore, BTM",
+      "cuisine": "Chinese, Thai, Asian, Malaysian, Vietnamese, Sri Lankan, Burmese",
+      "estimated_cost": 1400.0,
+      "rating": 4.4,
+      "tags": [
+        "has_online_delivery",
+        "has_table_booking"
+      ],
+      "score": 0.89,
+      "score_breakdown": {
+        "rating": 0.44000000000000006,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 8424,
+      "name": "Wok Paper Scissors",
+      "city": "BTM",
+      "locality": "50/1 Opposite Jyothi Niwas College, Koramangala 5th Block, Bangalore",
+      "location": "50/1 Opposite Jyothi Niwas College, Koramangala 5th Block, Bangalore, BTM",
+      "cuisine": "Asian, Malaysian, Chinese, Thai, Momos",
+      "estimated_cost": 550.0,
+      "rating": 4.3,
+      "tags": [
+        "has_online_delivery"
+      ],
+      "score": 0.88,
+      "score_breakdown": {
+        "rating": 0.43,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 8598,
+      "name": "Tibetan Kitchen",
+      "city": "BTM",
+      "locality": "52, Industrial Layout, 5th Block, Opposite Jyoti Nivas College Main Gate, Koramangala 5th Block, Bangalore",
+      "location": "52, Industrial Layout, 5th Block, Opposite Jyoti Nivas College Main Gate, Koramangala 5th Block, Bangalore, BTM",
+      "cuisine": "Tibetan, Chinese, Continental, Momos",
+      "estimated_cost": 600.0,
+      "rating": 4.3,
+      "tags": [
+        "has_online_delivery"
+      ],
+      "score": 0.88,
+      "score_breakdown": {
+        "rating": 0.43,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 9030,
+      "name": "Noodle Panda",
+      "city": "BTM",
+      "locality": "122, Near Jyothi Nivas College, 1st Cross, KHB Colony, Koramangala 5th Block, Bengaluru",
+      "location": "122, Near Jyothi Nivas College, 1st Cross, KHB Colony, Koramangala 5th Block, Bengaluru, BTM",
+      "cuisine": "Chinese, Indonesian, Japanese, Malaysian, Thai, Vietnamese, Momos",
+      "estimated_cost": 800.0,
+      "rating": 4.3,
+      "tags": [
+        "has_online_delivery"
+      ],
+      "score": 0.88,
+      "score_breakdown": {
+        "rating": 0.43,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 27442,
+      "name": "Pot-O-Noodles",
+      "city": "Koramangala 4th Block",
+      "locality": "618, 80 Feet Road, Koramangala 4th Block, Bangalore",
+      "location": "618, 80 Feet Road, Koramangala 4th Block, Bangalore, Koramangala 4th Block",
+      "cuisine": "Chinese, Asian, Japanese",
+      "estimated_cost": 800.0,
+      "rating": 4.3,
+      "tags": [
+        "has_table_booking"
+      ],
+      "score": 0.88,
+      "score_breakdown": {
+        "rating": 0.43,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 26522,
+      "name": "Kitchen On Table",
+      "city": "Koramangala 4th Block",
+      "locality": "1548, 3rd Floor,19th Main Road, Sector 1, Agara Village, HSR, Bangalore",
+      "location": "1548, 3rd Floor,19th Main Road, Sector 1, Agara Village, HSR, Bangalore, Koramangala 4th Block",
+      "cuisine": "BBQ, Chinese, Japanese, Asian",
+      "estimated_cost": 1000.0,
+      "rating": 4.3,
+      "tags": [
+        "has_online_delivery"
+      ],
+      "score": 0.88,
+      "score_breakdown": {
+        "rating": 0.43,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 8283,
+      "name": "Hunan",
+      "city": "BTM",
+      "locality": "123, 1st Floor, KHB Colony, Koramangala 5th Block, Bangalore",
+      "location": "123, 1st Floor, KHB Colony, Koramangala 5th Block, Bangalore, BTM",
+      "cuisine": "Chinese, Thai, Momos",
+      "estimated_cost": 1100.0,
+      "rating": 4.3,
+      "tags": [
+        "has_table_booking"
+      ],
+      "score": 0.88,
+      "score_breakdown": {
+        "rating": 0.43,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 9422,
+      "name": "Crawl Street",
+      "city": "BTM",
+      "locality": "77/A, 4th Floor Floor, Jyoti Nivas College Road, Koramangala 5th Block, Bangalore",
+      "location": "77/A, 4th Floor Floor, Jyoti Nivas College Road, Koramangala 5th Block, Bangalore, BTM",
+      "cuisine": "Continental, Finger Food, North Indian, Chinese",
+      "estimated_cost": 1200.0,
+      "rating": 4.3,
+      "tags": [
+        "has_online_delivery",
+        "has_table_booking"
+      ],
+      "score": 0.88,
+      "score_breakdown": {
+        "rating": 0.43,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 28307,
+      "name": "The Fixx",
+      "city": "Koramangala 4th Block",
+      "locality": "757, 80 Feet Road, Koramangala 4th Block, Bangalore",
+      "location": "757, 80 Feet Road, Koramangala 4th Block, Bangalore, Koramangala 4th Block",
+      "cuisine": "Continental, South Indian, Italian, North Indian, Chinese",
+      "estimated_cost": 1200.0,
+      "rating": 4.3,
+      "tags": [
+        "has_table_booking"
+      ],
+      "score": 0.88,
+      "score_breakdown": {
+        "rating": 0.43,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    },
+    {
+      "source_row_index": 35030,
+      "name": "Red Onion",
+      "city": "Koramangala 7th Block",
+      "locality": "Money Chambers Double Road, Shanti Nagar, Bangalore",
+      "location": "Money Chambers Double Road, Shanti Nagar, Bangalore, Koramangala 7th Block",
+      "cuisine": "Chinese, North Indian, Biryani, Kebab",
+      "estimated_cost": 1200.0,
+      "rating": 4.3,
+      "tags": [
+        "has_online_delivery",
+        "has_table_booking"
+      ],
+      "score": 0.88,
+      "score_breakdown": {
+        "rating": 0.43,
+        "cost_fit": 0.25,
+        "tag_match": 0.15,
+        "location_bonus": 0.05
+      }
+    }
+  ]
+}

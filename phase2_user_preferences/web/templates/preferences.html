@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant preferences</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #fff;
+      --text: #1a1d26;
+      --muted: #5c6578;
+      --border: #e2e5eb;
+      --accent: #c94c32;
+      --accent-hover: #a83d28;
+      --error: #b42318;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 2rem 1rem 3rem;
+    }
+    .wrap { max-width: 36rem; margin: 0 auto; }
+    h1 { font-size: 1.5rem; font-weight: 650; margin: 0 0 0.25rem; }
+    .lede { color: var(--muted); margin: 0 0 1.5rem; font-size: 0.95rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    }
+    label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+    .field { margin-bottom: 1.1rem; }
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 0.55rem 0.65rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 1rem;
+      background: #fff;
+    }
+    input:focus, select:focus {
+      outline: 2px solid rgba(201, 76, 50, 0.25);
+      border-color: var(--accent);
+    }
+    .hint { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+    .checks label {
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.45rem;
+    }
+    .checks input { width: auto; }
+    button[type="submit"] {
+      width: 100%;
+      margin-top: 0.5rem;
+      padding: 0.65rem 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--accent);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover { background: var(--accent-hover); }
+    .errors {
+      background: #fef3f2;
+      border: 1px solid #fecdca;
+      color: var(--error);
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+    .errors ul { margin: 0.35rem 0 0; padding-left: 1.2rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Your dining preferences</h1>
+    <p class="lede">Tell us what you are looking for. We will use this profile in the next phases to filter and rank restaurants.</p>
+
+    <div class="card">
+      {% if errors %}
+      <div class="errors">
+        <strong>Please fix the following:</strong>
+        <ul>
+          {% for e in errors %}<li>{{ e }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      <form method="post" action="{{ url_for('submit') }}" novalidate>
+        <div class="field">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" required
+            placeholder="e.g. Delhi, Bangalore"
+            value="{{ form.get('location', '') if form else '' }}">
+        </div>
+
+        <div class="field">
+          <label for="budget">Budget</label>
+          <select id="budget" name="budget" required>
+            {% set b = form.get('budget', '') if form else '' %}
+            <option value="" disabled {{ 'selected' if not b else '' }}>Select budget band</option>
+            <option value="low" {{ 'selected' if b == 'low' else '' }}>Low</option>
+            <option value="medium" {{ 'selected' if b == 'medium' else '' }}>Medium</option>
+            <option value="high" {{ 'selected' if b == 'high' else '' }}>High</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="cuisine">Cuisine</label>
+          <input type="text" id="cuisine" name="cuisine" required
+            placeholder="e.g. Italian, Chinese"
+            value="{{ form.get('cuisine', '') if form else '' }}">
+        </div>
+
+        <div class="field">
+          <label for="min_rating">Minimum rating (optional)</label>
+          <input type="number" id="min_rating" name="min_rating" min="0" max="5" step="0.1"
+            placeholder="Defaults to 3.0 if left empty"
+            value="{{ form.get('min_rating', '') if form else '' }}">
+          <p class="hint">Scale 0–5. Leave blank to use a sensible default.</p>
+        </div>
+
+        <div class="field checks">
+          <span style="font-size:0.875rem;font-weight:600;display:block;margin-bottom:0.35rem;">Optional preferences</span>
+          {% set selected = form.getlist('optional_tags') if form else [] %}
+          <label><input type="checkbox" name="optional_tags" value="family-friendly"
+            {{ 'checked' if 'family-friendly' in selected else '' }}> Family-friendly</label>
+          <label><input type="checkbox" name="optional_tags" value="quick service"
+            {{ 'checked' if 'quick service' in selected else '' }}> Quick service</label>
+          <label><input type="checkbox" name="optional_tags" value="outdoor seating"
+            {{ 'checked' if 'outdoor seating' in selected else '' }}> Outdoor seating</label>
+        </div>
+
+        <button type="submit">Save preferences</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

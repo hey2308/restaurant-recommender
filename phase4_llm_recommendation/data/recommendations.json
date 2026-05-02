@@ -1,0 +1,68 @@
+{
+  "profile": {
+    "location": "Bangalore",
+    "budget": "medium",
+    "cuisine": "Chinese",
+    "min_rating": 3.8,
+    "optional_tags": []
+  },
+  "summary": "Top 5 Chinese restaurants in Bangalore with a medium budget and a minimum rating of 3.8",
+  "recommendations": [
+    {
+      "rank": 1,
+      "name": "Asia Kitchen By Mainland China",
+      "why_recommended": "Highly rated Chinese restaurant with a great score and excellent reviews",
+      "rating": 4.9,
+      "estimated_cost": 1500.0,
+      "cuisine": "Asian, Chinese, Thai, Momos",
+      "location": "Koramangala 5th Block, Bangalore",
+      "source_row_index": 8275
+    },
+    {
+      "rank": 2,
+      "name": "ECHOES Koramangala",
+      "why_recommended": "Well-rated Chinese restaurant with a good score and affordable price",
+      "rating": 4.7,
+      "estimated_cost": 750.0,
+      "cuisine": "Chinese, American, Continental, Italian, North Indian",
+      "location": "Koramangala 5th Block, Bangalore",
+      "source_row_index": 10882
+    },
+    {
+      "rank": 3,
+      "name": "Mahjong Room - WelcomHotel Bengaluru",
+      "why_recommended": "High-quality Chinese restaurant with a good rating and suitable price",
+      "rating": 4.6,
+      "estimated_cost": 1200.0,
+      "cuisine": "Chinese",
+      "location": "Richmond Road, Bangalore",
+      "source_row_index": 6135
+    },
+    {
+      "rank": 4,
+      "name": "Vanilla Sky",
+      "why_recommended": "Well-rated restaurant with Chinese cuisine and a good score",
+      "rating": 4.6,
+      "estimated_cost": 1200.0,
+      "cuisine": "Chinese, Continental, North Indian, Finger Food",
+      "location": "HSR, Bangalore",
+      "source_row_index": 16974
+    },
+    {
+      "rank": 5,
+      "name": "The Big Barbeque",
+      "why_recommended": "Good-rated restaurant with Chinese cuisine and a medium budget",
+      "rating": 4.7,
+      "estimated_cost": 1500.0,
+      "cuisine": "BBQ, North Indian, Continental, Chinese",
+      "location": "Electronic City, Bangalore",
+      "source_row_index": 13367
+    }
+  ],
+  "meta": {
+    "mode": "llm",
+    "model": "llama-3.3-70b-versatile",
+    "input_candidates": 25,
+    "prompt_candidates": 12
+  }
+}
