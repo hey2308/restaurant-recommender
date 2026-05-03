@@ -142,11 +142,11 @@ export default function RecommendationsPage() {
           {data.cards.slice(0, 6).map((restaurant, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl overflow-hidden shadow-card card-hover animate-fade-in"
+              className="bg-white rounded-2xl overflow-hidden shadow-card card-hover animate-fade-in flex flex-col"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Header Section with Rank and Rating */}
-              <div className="relative bg-gradient-to-br from-gray-100 to-gray-200 p-4">
+              <div className="relative bg-gradient-to-br from-gray-100 to-gray-200 p-4 flex-shrink-0">
                 <div className="flex items-center justify-between">
                   <span className="bg-secondary/80 text-white text-xs font-bold px-2 py-1 rounded">
                     Rank {getRankBadge(index)}
@@ -158,8 +158,8 @@ export default function RecommendationsPage() {
                 </div>
               </div>
 
-              {/* Content Section */}
-              <div className="p-5">
+              {/* Content Section - grows to fill space */}
+              <div className="p-5 flex flex-col flex-grow">
                 <h3 className="text-lg font-bold text-secondary mb-1">{restaurant.title}</h3>
                 <div className="flex items-center gap-2 text-sm text-secondary-light mb-3">
                   <MapPin className="w-4 h-4" />
@@ -168,8 +168,8 @@ export default function RecommendationsPage() {
                   <span>₹{restaurant.estimated_cost}</span>
                 </div>
 
-                {/* Why Recommended */}
-                <div className="bg-primary/5 border-l-4 border-primary p-3 rounded-r-lg mb-4">
+                {/* Why Recommended - grows to fill available space */}
+                <div className="bg-primary/5 border-l-4 border-primary p-3 rounded-r-lg mb-4 flex-grow">
                   <div className="flex items-start gap-2">
                     <Sparkles className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                     <div>
@@ -179,8 +179,8 @@ export default function RecommendationsPage() {
                   </div>
                 </div>
 
-                {/* Actions */}
-                <div className="flex items-center gap-2">
+                {/* Actions - always at bottom */}
+                <div className="flex items-center gap-2 mt-auto flex-shrink-0">
                   <button className="flex-1 bg-primary text-white py-2 rounded-lg font-medium hover:bg-primary-dark transition-colors text-sm">
                     VIEW DETAILS
                   </button>
