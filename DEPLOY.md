@@ -47,14 +47,58 @@ Should return:
 
 ## Phase 10: Frontend Deployment on Vercel
 
-See `phase7_frontend_experience/README.md` for Vercel deployment steps.
+### Prerequisites
+1. GitHub repository with pushed code
+2. Vercel account (free at https://vercel.com)
+3. Backend deployed on Render (Phase 9 complete) with working URL
 
-### Quick Steps
-1. Go to https://vercel.com
-2. Import your GitHub repository
-3. Configure:
-   - **Framework**: Next.js
-   - **Root Directory**: `phase7_frontend_experience`
-4. Add environment variable:
-   - `NEXT_PUBLIC_API_URL`: `https://<your-render-service>.onrender.com`
-5. Deploy!
+### Deployment Steps
+
+#### Option 1: Vercel Dashboard (Recommended)
+1. Go to https://vercel.com/dashboard
+2. Click "Add New Project"
+3. Import your GitHub repository: `hey2308/restaurant-recommender`
+4. Configure:
+   - **Framework Preset**: Next.js
+   - **Root Directory**: `phase7_frontend_experience` (⚠️ Important!)
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `.next`
+5. Add Environment Variable:
+   - **Name**: `NEXT_PUBLIC_API_URL`
+   - **Value**: Your Render backend URL (e.g., `https://bitewise-backend.onrender.com`)
+6. Click "Deploy"
+
+#### Option 2: Vercel CLI
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Login
+vercel login
+
+# Deploy
+cd phase7_frontend_experience
+vercel --prod
+```
+
+### Verify Deployment
+Visit your deployed URL:
+```
+https://<your-project>.vercel.app
+```
+
+### Post-Deployment
+- Vercel auto-deploys on every push to main
+- Update `NEXT_PUBLIC_API_URL` if backend URL changes
+- Add custom domain in Vercel Settings → Domains (optional)
+
+---
+
+## Production Checklist
+
+- [ ] Backend deployed on Render with `GROQ_API_KEY` set
+- [ ] Frontend deployed on Vercel with `NEXT_PUBLIC_API_URL` set
+- [ ] CORS enabled on backend (already configured)
+- [ ] Test end-to-end recommendation flow
+- [ ] Verify LLM explanations are showing (not fallback)
+- [ ] Custom domains configured (optional)

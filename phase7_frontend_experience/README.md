@@ -236,24 +236,79 @@ rewrites: [
 - Button loading states
 - Form field focus states
 
-## 🚀 Deployment
+## 🚀 Phase 10: Vercel Deployment
 
-### Static Export (for simple hosting)
+### Prerequisites
+1. GitHub repository with pushed code
+2. Vercel account (free at https://vercel.com)
+3. Backend deployed on Render (Phase 9 complete)
+
+### Environment Setup
+
+Create `.env.local` for local development:
+```bash
+# .env.local
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
+
+### Deployment Steps
+
+#### Option 1: Vercel Dashboard (Recommended)
+1. Go to https://vercel.com/dashboard
+2. Click "Add New Project"
+3. Import your GitHub repository
+4. Configure:
+   - **Framework Preset**: Next.js
+   - **Root Directory**: `phase7_frontend_experience`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `.next`
+5. Add Environment Variable:
+   - Name: `NEXT_PUBLIC_API_URL`
+   - Value: `https://your-render-service.onrender.com`
+6. Click "Deploy"
+
+#### Option 2: Vercel CLI
+```bash
+# Install Vercel CLI globally
+npm i -g vercel
+
+# Login to Vercel
+vercel login
+
+# Deploy from project directory
+cd phase7_frontend_experience
+vercel --prod
+```
+
+### Post-Deployment Configuration
+
+1. **Update API URL**: If your Render backend URL changes, update the environment variable in Vercel dashboard:
+   - Project Settings → Environment Variables
+   - Edit `NEXT_PUBLIC_API_URL`
+
+2. **Custom Domain** (Optional):
+   - Vercel Dashboard → Project → Settings → Domains
+   - Add your custom domain
+
+3. **Enable Auto-Deploy**:
+   - Vercel automatically deploys on every push to main branch
+
+### Verify Deployment
+
+Visit your deployed URL:
+```
+https://<your-project>.vercel.app
+```
+
+Test the recommendation flow end-to-end.
+
+### Static Export (Alternative for simple hosting)
 ```javascript
 // next.config.js
 const nextConfig = {
   output: 'export',
   distDir: 'dist',
 }
-```
-
-### Vercel Deployment (Recommended)
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
 ```
 
 ## 📈 Next Steps
