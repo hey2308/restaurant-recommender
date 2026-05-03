@@ -240,6 +240,7 @@ rewrites: [
 
 > Deployment triggered: Ready for production!
 > Auto-deploy enabled
+> Build started
 
 ### Prerequisites
 1. GitHub repository with pushed code
