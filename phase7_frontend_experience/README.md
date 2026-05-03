@@ -239,6 +239,7 @@ rewrites: [
 ## 🚀 Phase 10: Vercel Deployment
 
 > Deployment triggered: Ready for production!
+> Auto-deploy enabled
 
 ### Prerequisites
 1. GitHub repository with pushed code
