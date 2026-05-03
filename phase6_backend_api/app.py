@@ -68,8 +68,14 @@ def load_phase5_data() -> Dict[str, Any]:
 
 def _debug_log(msg: str):
     """Write debug message to file."""
-    with open("c:/Projects/Milestone1/debug_api.log", "a") as f:
-        f.write(f"{msg}\n")
+    import os
+    log_path = os.path.join(Config.DATA_ROOT, "debug_api.log")
+    try:
+        with open(log_path, "a") as f:
+            f.write(f"{msg}\n")
+    except Exception:
+        # Silently ignore if can't write (e.g., read-only filesystem)
+        pass
 
 def run_pipeline_with_preferences(preferences: Dict[str, Any]) -> Dict[str, Any]:
     """Run the complete pipeline dynamically with user preferences."""
